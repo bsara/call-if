@@ -1,0 +1,41 @@
+{
+  "name": "call-if",
+  "version": "1.0.0",
+  "description": "Functions that call a given function if given conditions are met.",
+  "authors": [
+    "Brandon Sara (http://bsara.pro)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bsara/call-if#readme",
+  "repository": "bsara/call-if",
+  "bugs": {
+    "url": "https://github.com/bsara/call-if/issues"
+  },
+  "keywords": [
+    "call",
+    "callif",
+    "call-if",
+    "callunless",
+    "call-unless",
+    "if",
+    "unless",
+    "condition",
+    "conditional",
+    "conditionals"
+  ],
+  "main": "index.umd.js",
+  "module": "index.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "bump": "npm --no-git-tag-version version patch",
+    "bump:major": "npm --no-git-tag-version version major",
+    "bump:minor": "npm --no-git-tag-version version minor",
+    "bump:patch": "npm --no-git-tag-version version patch",
+    "postversion": "npx update-version-comment-refs && npx push-version-comment-refs",
+    "prepublishOnly": "git push && npx tag-version",
+    "postpublish": "npm run bump"
+  },
+  "devDependencies": {
+    "npm-scripts-versioning": "^1.0.0-beta.8"
+  }
+}
