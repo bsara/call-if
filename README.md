@@ -2,6 +2,86 @@
 
 ![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)
 
+> A micro-library of functions that call a given function if a given condition is met.
+> This library was created for both convenience purposes and for the cleaner code that
+> can be produced by using it's provided functions.
+
+> **NOTE:** Compatible with ES4+ browsers, AMD, CommonJS, ES6 Imports, and HTML
+> script references.
+
+[Changelog](https://github.com/bsara/call-if/blob/master/CHANGELOG.md)
+
+
+
+## Install
+
+```bash
+$ npm i --save call-if
+```
+
+
+## Usage
+
+```js
+import { callIf, callIfOrNull } from 'callIf';
+
+
+function myFunc(valueToPrint, valueToReturn) {
+  console.log(valueToPrint);
+
+  return valueToReturn;
+}
+
+
+callIf(true, myFunc, "Fish fingers and custard", 42);  // Prints "Fish fingers and custard" & returns 42
+callIf(false, myFunc, "Fish fingers and custard", 42); // Prints nothing and returns `undefined`
+
+callIfOrNull(true, myFunc, "Fish fingers and custard", 42);  // Prints "Fish fingers and custard" & returns 42
+callIfOrNull(false, myFunc, "Fish fingers and custard", 42); // Prints nothing and returns `null`
+
+```
+
+
+## API
+
+### callIf(condition, func, *[...funcParams]*)
+
+Returns the result of calling `func` if given `condition` evaluates to `true`; otherwise,
+returns `undefined`.
+
+- **condition** `Boolean`
+
+  Condition used to determine whether to call end return the result of `func` or `undefined`.
+
+- **func** `*`
+
+  Function to be called if `condition` evaluates to `true`.
+
+- **...funcParams** `*`
+
+  Parameters to be passed to `func`, if called.
+
+
+<br/>
+
+
+### callIfOrNull(condition, func, *[...funcParams]*)
+
+Returns the result of calling `func` if given `condition` evaluates to `true`; otherwise,
+returns `null`.
+
+- **condition** `Boolean`
+
+  Condition used to determine whether to call end return the result of `func` or `null`.
+
+- **func** `*`
+
+  Function to be called if `condition` evaluates to `true`.
+
+- **...funcParams** `*`
+
+  Parameters to be passed to `func`, if called.
+
 
 <br/>
 <br/>

@@ -18,12 +18,10 @@
  * PERFORMANCE OF THIS SOFTWARE.
  */
 
-
-
 /**
  * @param  {Boolean}  condition  - Condition used to determine whether to call end
  *                                 return the result of `func` or `undefined`.
- * @param  {Function} func       - Function to be called if condition evaluates to
+ * @param  {Function} func       - Function to be called if `condition` evaluates to
  *                                 `true`.
  * @param  {...?*}    funcParams - Parameters to be passed to `func`, if called.
  *
@@ -40,7 +38,7 @@ export function callIfOrNull(...args) {
 /**
  * @param  {Boolean}  condition  - Condition used to determine whether to call end
  *                                 return the result of `func` or `undefined`.
- * @param  {Function} func       - Function to be called if condition evaluates to
+ * @param  {Function} func       - Function to be called if `condition` evaluates to
  *                                 `true`.
  * @param  {...?*}    funcParams - Parameters to be passed to `func`, if called.
  *
