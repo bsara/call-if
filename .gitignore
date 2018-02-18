@@ -19,7 +19,7 @@
 .stylelintrc.js
 
 # misc
-/value-if-*.tgz
+/call-if-*.tgz
 /connect.lock
 /coverage/*
 /report_*

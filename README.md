@@ -50,15 +50,15 @@ callIfOrNull(false, myFunc, "Fish fingers and custard", 42); // Prints nothing a
 Returns the result of calling `func` if given `condition` evaluates to `true`; otherwise,
 returns `undefined`.
 
-- **condition** `Boolean`
+- **condition** `?Boolean`
 
   Condition used to determine whether to call end return the result of `func` or `undefined`.
 
-- **func** `*`
+- **func** `Function`
 
   Function to be called if `condition` evaluates to `true`.
 
-- **...funcParams** `*`
+- **...funcParams** `?...*`
 
   Parameters to be passed to `func`, if called.
 
@@ -71,15 +71,15 @@ returns `undefined`.
 Returns the result of calling `func` if given `condition` evaluates to `true`; otherwise,
 returns `null`.
 
-- **condition** `Boolean`
+- **condition** `?Boolean`
 
   Condition used to determine whether to call end return the result of `func` or `null`.
 
-- **func** `*`
+- **func** `Function`
 
   Function to be called if `condition` evaluates to `true`.
 
-- **...funcParams** `*`
+- **...funcParams** `?...*`
 
   Parameters to be passed to `func`, if called.
 
