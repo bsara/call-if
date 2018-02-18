@@ -1,6 +1,6 @@
 {
   "name": "call-if",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Micro-library of functions that call a given function if a given condition is met.",
   "authors": [
     "Brandon Sara (http://bsara.pro)"
