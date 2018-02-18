@@ -23,7 +23,7 @@ $ npm i --save call-if
 ## Usage
 
 ```js
-import { callIf, callIfOrNull } from 'callIf';
+import { callIf, callIfOrNull } from 'call-if';
 
 
 function myFunc(valueToPrint, valueToReturn) {
