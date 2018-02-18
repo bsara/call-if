@@ -3,8 +3,9 @@
 ![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)
 
 > A micro-library of functions that call a given function if a given condition is met.
+>
 > This library was created for both convenience purposes and for the cleaner code that
-> can be produced by using it's provided functions.
+> can be produced by using its provided functions.
 
 > **NOTE:** Compatible with ES4+ browsers, AMD, CommonJS, ES6 Imports, and HTML
 > script references.
