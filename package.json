@@ -1,6 +1,6 @@
 {
   "name": "call-if",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Functions that call a given function if given conditions are met.",
   "authors": [
     "Brandon Sara (http://bsara.pro)"
