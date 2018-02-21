@@ -45,6 +45,6 @@ export function callIfOrNull(...args) {
  * @returns {?*} Result of calling `func` if given `condition` evaluates to `true`;
  *               otherwise, returns `undefined`.
  */
-export function callIf(condition, func ...funcParams) {
+export function callIf(condition, func, ...funcParams) {
   return (condition ? func(...funcParams) : undefined);
 }
