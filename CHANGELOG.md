@@ -1,3 +1,9 @@
+# 1.0.5
+
+- Optimized package size by only including what is needed in npm package.
+
+
+
 # 1.0.4
 
 - **[FIXED]** syntax issue in `index.js`.

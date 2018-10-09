@@ -26,6 +26,9 @@
   "main": "index.umd.js",
   "module": "index.js",
   "jsnext:main": "index.js",
+  "files": [
+    "index*.js"
+  ],
   "scripts": {
     "bump": "npm --no-git-tag-version version patch",
     "bump:major": "npm --no-git-tag-version version major",
